@@ -8,7 +8,7 @@ let mcl = mongodb.MongoClient
 //create router instance
 let router = express.Router()
 //create rest api
-router.delete("/", (req, res) => {
+router.post("/", (req, res) => {
     let obj = {
         "p_id": req.body.p_id
     }
